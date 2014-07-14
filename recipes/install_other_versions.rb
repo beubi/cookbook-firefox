@@ -6,22 +6,24 @@
 #
 # All rights reserved - Do Not Redistribute
 #
+
+execute "apt-get update > /dev/null" do
+  action :run
+end
+
 if RUBY_PLATFORM.include? "x86_64"
   package "ia32-libs"
 end
 
-user = node[:build_agent][:username]
-dir_path = "/home/#{user}/firefoxes"
+dir_path = "/home/vagrant/firefoxes"
 
 directory dir_path do
-  owner user
   mode "0755"
   action :create
 end
 
 node[:firefox][:versions].each do |firefox_version|
   directory "#{dir_path}/#{firefox_version}" do
-    owner user
     mode "0755"
     action :create
   end
@@ -31,7 +33,6 @@ node[:firefox][:versions].each do |firefox_version|
   tar_file = "#{firefox_version_path}/#{firefox[:filename]}"
 
   remote_file tar_file do
-    owner user
     source firefox[:url]
     checksum firefox[:sha]
     action :create_if_missing
@@ -44,7 +45,7 @@ node[:firefox][:versions].each do |firefox_version|
     EOH
   end
 
-  link "/usr/bin/firefox#{firefox_version}" do
-    to"#{firefox_version_path}/#{firefox[:firefox_dir]}/firefox"
+  link "/usr/bin/firefox" do
+    to "#{firefox_version_path}/#{firefox[:firefox_dir]}/firefox"
   end
 end
