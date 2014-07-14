@@ -1,4 +1,4 @@
-name "firefox"
+name             "firefox"
 maintainer       "Substantial Inc."
 maintainer_email "shaun@substantial.com"
 license          "All rights reserved"
