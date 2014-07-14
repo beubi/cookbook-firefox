@@ -13,6 +13,8 @@ end
 
 if RUBY_PLATFORM.include? "x86_64"
   package "ia32-libs"
+  package "libasound2"
+  package "libxrender1"
 end
 
 dir_path = "/home/vagrant/firefoxes"
