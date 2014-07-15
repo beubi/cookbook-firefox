@@ -7,8 +7,6 @@
 # All rights reserved - Do Not Redistribute
 #
 
-
-
 if platform?('ubuntu')
   
   package "firefox"
