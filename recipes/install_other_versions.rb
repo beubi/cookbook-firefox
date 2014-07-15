@@ -13,21 +13,6 @@ if platform?('ubuntu')
   
   package "firefox"
   
-#  execute "apt-get update > /dev/null" do
-#    action :run
-#  end
-
-#  if node.platform_version.to_f == 14.04
-#    if RUBY_PLATFORM.include? "x86_64"
-#    end
-#  elsif node.platform_version.to_f == 12.04
-#    if RUBY_PLATFORM.include? "x86_64"
-#      package "ia32-libs"
-#      package "libasound2"
-#      package "libxrender1"
-#    end
-#  end
-
   dir_path = "/home/vagrant/firefoxes"
 
   directory dir_path do
