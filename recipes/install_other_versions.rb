@@ -11,7 +11,7 @@ if platform?('ubuntu')
   
   package "firefox"
   
-  dir_path = "/home/vagrant/firefoxes"
+  dir_path = "/opt/firefoxes"
 
   directory dir_path do
     mode "0755"
