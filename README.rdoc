@@ -9,8 +9,8 @@ Attributes
 
 To install a speficif ESR version
 
-* `default[:firefox][:versions]` = `[ "24.6.0" ]` - 24.6.
-* `default[:firefox][:versions]` = `[ "31.3.0" ]` - 31.3.
+* default[:firefox][:versions] = [ "24.6.0" ]
+* default[:firefox][:versions] = [ "31.3.0" ]
 
   
 USAGE
@@ -18,5 +18,5 @@ USAGE
 
 Put this at your run_list to install last firefox ESR
 
- * `recipe[firefox::install_other_versions]`
+ * recipe[firefox::install_other_versions]
 
