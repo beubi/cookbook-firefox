@@ -1,11 +1,22 @@
-= DESCRIPTION:
+DESCRIPTION
+==========
 
-Installs firefox ESR
+Installs firefox ESR in ubuntu
 
-= REQUIREMENTS:
-Just for ubuntu yet
 
-= ATTRIBUTES:
+Attributes
+==========
 
-= USAGE:
+To install a speficif ESR version
+
+* `default[:firefox][:versions]` = `[ "24.6.0" ]` - 24.6.
+* `default[:firefox][:versions]` = `[ "31.3.0" ]` - 31.3.
+
+  
+USAGE
+==========
+
+Put this at your run_list to install last firefox ESR
+
+ * `recipe[firefox::install_other_versions]`
 
