@@ -1,10 +1,10 @@
-DESCRIPTION
+=DESCRIPTION
 ==========
 
 Installs firefox ESR in ubuntu
 
 
-Attributes
+=Attributes
 ==========
 
 To install a speficif ESR version
@@ -13,7 +13,7 @@ To install a speficif ESR version
  * default[:firefox][:versions] = [ "31.3.0" ]
 
   
-USAGE
+=USAGE
 ==========
 
 Put this at your run_list to install last firefox ESR
