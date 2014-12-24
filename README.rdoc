@@ -1,6 +1,9 @@
 = DESCRIPTION:
 
+Installs firefox ESR
+
 = REQUIREMENTS:
+Just for ubuntu yet
 
 = ATTRIBUTES:
 
