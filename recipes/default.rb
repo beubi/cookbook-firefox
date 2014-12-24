@@ -9,7 +9,10 @@
 
 if platform?('ubuntu')
   
-  include_recipe "firefox::default"
+  package "firefox"
+  package "firefox" do
+    action :upgrade
+  end
   
   dir_path = "/opt/firefoxes"
 
