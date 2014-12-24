@@ -18,5 +18,5 @@ To install a speficif ESR version
 
 Put this at your run_list to install last firefox ESR
 
- * recipe[firefox::install_other_versions]
+ * recipe[firefox]
 
