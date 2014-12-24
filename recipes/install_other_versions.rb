@@ -9,7 +9,7 @@
 
 if platform?('ubuntu')
   
-  package "firefox"
+  include_recipe "firefox::default"
   
   dir_path = "/opt/firefoxes"
 
