@@ -9,8 +9,8 @@ Attributes
 
 To install a speficif ESR version
 
-* default[:firefox][:versions] = [ "24.6.0" ]
-* default[:firefox][:versions] = [ "31.3.0" ]
+ * default[:firefox][:versions] = [ "24.6.0" ]
+ * default[:firefox][:versions] = [ "31.3.0" ]
 
   
 USAGE
