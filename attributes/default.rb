@@ -12,4 +12,14 @@ default[:firefox]["24.6.0"] = {
  :firefox_dir => 'firefox'
 }
 
-default[:firefox][:versions] = []
+default[:firefox]["31.3.0"] = {
+ :url => "https://download.mozilla.org/?product=firefox-31.3.0esr-SSL&os=linux64&lang=en-US",
+ :filename => "firefox-31.3.0esr.tar.bz2",
+ :sha => "efd9ddfcf54299ce34f190bf51abbdc3453e1c9ce9633adbe2b2d2408b02ea2d8316706372117644dd00e528d4a8388c76277e001138e84fd18825a0c849c878",
+ :firefox_dir => 'firefox'
+}
+# http://ftp.mozilla.org/pub/mozilla.org/firefox/releases/31.3.0esr/SHA512SUMS
+
+default[:firefox]["ESR"] = node[:firefox]["31.3.0"]
+
+default[:firefox][:versions] = [ "ESR" ]
